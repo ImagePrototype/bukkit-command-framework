@@ -22,7 +22,6 @@ public class TestCommand implements CommandExecutor {
                 .executor(new TestSubCommandExecutor())
                 .build();
 
-
         SmartCommand.builder()
                 .name("example")
                 .aliases("ex", "e")
