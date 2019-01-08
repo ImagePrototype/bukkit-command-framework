@@ -116,15 +116,14 @@ public final class SmartCommand implements CommandExecutor {
 
         private Map<Set<String>, SmartCommand> childCommandMap;
 
-        Builder() {
+        private Builder() {
+            //private
         }
 
         public Builder subcommand() {
             this.subcommand = true;
             return this;
         }
-
-        //
 
         public Builder name(String commandLabel) {
             this.commandLabel = commandLabel;
